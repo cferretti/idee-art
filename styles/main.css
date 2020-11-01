@@ -1,0 +1,116 @@
+body{
+	margin:0;
+}
+
+
+*{
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#app{
+    min-height: 100vh;
+	width:100vw;
+	padding:0;
+	margin:0;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #70798c;
+}
+
+.container{
+    display: flex;
+    justify-content: stretch;
+    height: 100%;
+    min-height: 100vh;
+    width : 100%;
+}
+
+.result{
+	background-color: #70798c;
+    height: 100%;
+    padding: 20px;
+border-radius: 4px;
+background: linear-gradient(145deg, #282525, #212020);
+box-shadow: -4px -4px 7px #5b6271, 
+            4px 4px 7px #8590a7;
+}
+
+.bold{
+	font-weight: bold;
+}
+.flex-1{
+	flex:1;
+}
+
+.box{
+	padding:24px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+li{
+	cursor:pointer;
+    padding: 8px 12px;
+border-radius: 4px;
+border-radius: 4px;
+background: linear-gradient(315deg, #656d7e, #788196);
+box-shadow: 4px 4px 7px #5b6271, 
+            -4px -4px 7px #8590a7;
+    margin-bottom: 18px;
+    color:white;
+}
+
+li.active{
+border-radius: 4px;
+
+background: linear-gradient(315deg, #656d7e, #788196);
+
+box-shadow: -4px -4px 7px #5b6271, 
+            4px 4px 7px #8590a7;
+}
+
+.form-title{
+	color: #F5F1ED;
+}
+
+button{
+	cursor:pointer;
+	appearance: none;
+    border-image: none;
+    background: linear-gradient(145deg, #eba977, #c68e64);
+
+box-shadow: 4px 4px 7px #5b6271, 
+            -4px -4px 7px #8590a7;
+    border: none;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.checkicon {
+	margin-right: 8px;
+}
+
+.result p{
+	color: white;
+}
+
+@media(max-width: 720px){
+	.container{
+		flex-direction: column;
+	}
+}
